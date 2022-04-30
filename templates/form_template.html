@@ -1,0 +1,83 @@
+<html>
+  <title>CoV-RoBERTa</title>
+  <body>
+    <h1 style="text-align: center">
+      CoV-RoBERTa (CORD-19 Research Paper Summarization Using Transformer-Based
+      Entity Recognition)
+    </h1>
+    <form
+      action="http://localhost:3001/upload"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend>Select a Paper to Upload</legend>
+        <div>
+          <input type="file" name="paper" />
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Choose entities of importance:</legend>
+        <div>
+          <input type="checkbox" id="gene" name="gene" checked />
+          <label for="gene">Gene</label>
+        </div>
+        <div>
+          <input type="checkbox" id="date" name="date" />
+          <label for="date">Date</label>
+        </div>
+        <div>
+          <input type="checkbox" id="quantity" name="quantity" />
+          <label for="quantity">Quantity</label>
+        </div>
+        <div>
+          <input type="checkbox" id="disease" name="disease" />
+          <label for="disease">Disease</label>
+        </div>
+        <div>
+          <input type="checkbox" id="body_part" name="body_part" />
+          <label for="body_part">Body Part</label>
+        </div>
+        <div>
+          <input type="checkbox" id="person" name="person" />
+          <label for="person">Person</label>
+        </div>
+        <div>
+          <input type="checkbox" id="chemical" name="chemical" />
+          <label for="chemical">Chemical</label>
+        </div>
+        <div>
+          <input type="checkbox" id="cell" name="cell" />
+          <label for="cell">Cell</label>
+        </div>
+        <div>
+          <input type="checkbox" id="species" name="species" />
+          <label for="species">Species</label>
+        </div>
+        <div>
+          <input type="checkbox" id="procedure" name="procedure" />
+          <label for="procedure">Procedure (Scientific & Biomedical)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="place" name="place" />
+          <label for="place">Place</label>
+        </div>
+        <div>
+          <input type="checkbox" id="process" name="process" />
+          <label for="process">Process (Natural Biological Processes)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="phenomenon" name="phenomenon" />
+          <label for="phenomenon">Phenomenon (Human Intervention)</label>
+        </div>
+        <div>
+          <input type="checkbox" id="virus" name="virus" />
+          <label for="virus">Virus</label>
+        </div>
+      </fieldset>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
